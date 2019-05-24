@@ -6,11 +6,11 @@ services:
       kompose.service.type: nodeport
     user: root
     ports:
-      - '8080:8080'
+      - '8079:8080'
       - '8443:8443'
       - '50000:50000'
     volumes:
-      - 'jenkins_data:/jenkins_config'
+      - 'D:\Programing\jenkins-docker:/var/jenkins_config'
 volumes:
   jenkins_data:
     driver: local
